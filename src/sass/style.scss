@@ -1,0 +1,13 @@
+// как подключить шрифты:
+// захожу на гуглфонс https://fonts.google.com/
+// ищу нужный мне шрифт например Poppins
+// выбираю нужное мне начертание например medium 500 и bold 700
+// нажимаю Use on the web - @import
+// копирую информацтю из style: @import url('ссылка на шрифт на гуглфонс с нужными мне начертаниями'); и добавляю CSS rules to specify families с отступами для всего сайта *
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
