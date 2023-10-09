@@ -1,0 +1,34 @@
+.promo {
+    min-height: 100vh;
+    position: relative;
+    background: url('../img/Background.jpg') no-repeat 50%/cover;
+    padding-top: 205px;
+    &__title {
+        width: 535px;
+        margin-top: 10px;
+    }
+    &__subtitle {
+        position: relative;
+        padding-left: 10px;
+        z-index: 2;
+        @include before_circle;
+    }
+    &__btns {
+        margin-top: 25px;
+        display: flex;
+        align-items: center; //поставили кнопк "про меня" по центру на уровне кнопки "портфолио"
+        justify-content: space-between; // отодвинули кнопку "про меня" от кнопки "портфолио"
+        width: 250px;
+    }
+    &__link {
+        color: #000;
+        font-weight: bold;
+        &:hover {
+            color: #000;
+            text-decoration: none;
+        }
+    }
+} 
+// 100vh - 1 экран заполняет весь элемент. 
+// когда работаешь в сас коде весь код потом трансилируется в сиэсэс код т.е. главный файлик в папке дист в папке сиэсэс style.min.css - именно исходя из этого прописывается путь для картинки
+// hover - действие ссылки при наведении

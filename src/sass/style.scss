@@ -13,3 +13,19 @@
 }
 
 @import 'libs/bootstrap-reboot.min'; //подключаю бутстрап библиотеку
+
+@import 'base/variables'; // подключаю переменные - главный цвет
+@import 'base/mixins'; // подключаю файл со стилями миксинов (повторяющихся элементов) (делать это надо после вариаблес(переменных в которых лежит главный цвет main-color)
+
+.container {
+    width: 1140px;
+    margin: 0 auto; // контейнер будет по середине
+    }
+
+@import 'blocks/promo'; // подключаю стили для секции promo
+
+@import 'blocks/title'; // подключаю стили для заголовков
+
+@import 'blocks/button'; // подключаю стили кнопок
+
+@import 'blocks/sidepanel'; // подключаю стили aside социальные сети
