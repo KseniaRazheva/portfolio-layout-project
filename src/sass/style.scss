@@ -26,7 +26,8 @@
     width: 60px;
     height: 3px;
     background-color: $main-color;
-    margin-top: 25px;
+    //margin-top: 25px;
+    margin: 25px auto 0 auto;
 } //общие стили черточки
 
 @import 'blocks/promo'; // подключаю стили для секции promo
@@ -39,4 +40,6 @@
 
 @import 'blocks/menu'; // подключаю гамбургер
 
-@import 'blocks/about'; // подключаю стили раздела обо мне
+@import 'blocks/about'; // подключаю стили раздела "обо мне" второй экран 
+
+@import 'blocks/resume'; // подключаю стили раздела "опыт" третий экран

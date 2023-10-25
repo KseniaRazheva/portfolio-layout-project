@@ -1,0 +1,95 @@
+.resume {
+    padding-top: 120px;
+    &__title {
+        position: relative; //чтобы стал виден кружочек который я заинклюдила но по стандарту он становится в позиции лефт0 блока h2
+        text-align: center;
+        @include before_circle;
+        &:before {
+            top: -6px;
+            left: 50%;
+            transform: translateX(-50%);
+        } // стили для того чтобы кружочек встал посередине текста "опыт" 50% слева, но транслейтом на середина кружочка встает на середине экрана, а не начинается кружочек на середине экрана, а топ - разметка верх-низ
+    }
+    &__subtitle {
+        text-align: center;
+    } //черточку дивайдер стилизую в style.scss (в этом блоке есть только общие стили)
+    &__wrapper {
+        padding: 60px 65px 0 65px; // верх право низ лево
+        display: grid;
+        grid-template-columns: repeat(2, 425px); //повторить два раза по 425 пикселя
+        column-gap: 135px;
+    }
+    &__column {
+        &-title {
+            position: relative;
+            padding-left: 35px;
+            &:before {
+                content: '';
+                position: absolute;
+                width: 15px;
+                height: 15px;
+                background: $main-color;
+                border-radius: 100%;
+                left: -7px;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+        ul {
+            list-style-type: none; //убрала черную точечку у картинки
+            li {
+                position: relative;
+                &:after {
+                    content: '';
+                    width: 1px;
+                    //height: 100%;
+                    height: calc(100% + 16px); // чтобы вертикальная черточка была длиной до конца текста, важно: пробелы рядом с +
+                    position: absolute;
+                    top: -16px;
+                    left: 0;
+                    background-color: #000;
+                }
+            }
+        }
+    }
+    &__item {
+        position: relative;
+        &:before {
+            content: '';
+            height: 1px;
+            width: 45px;
+            position: absolute;
+            top: 68px;
+            background-color: #000;
+        }
+        &-head {
+            position: relative;
+            padding: 45px 0 0 100px;
+            h4 {
+                margin-bottom: 0;
+            }
+        }
+        &-body {
+            padding-left: 43px;
+            margin-top: 12px;
+            font-size: 12px;
+            line-height: 18px;
+        }
+        &-icon {
+            position: absolute;
+            top: 50px;
+            left: 45px;
+            @include before_circle;
+            img {
+                position: absolute;
+                left: 17px;
+                top: 14px;
+            }
+        }
+        &-location {
+            font-size: 12px;
+            line-height: 18px;
+            margin-top: 5px;
+        }
+    }
+}
