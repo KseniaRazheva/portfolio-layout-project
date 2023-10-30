@@ -21,17 +21,23 @@
         font-size: 48px;
 
     }
-    // &__section-title {
-    //     position: relative;
-    //     text-align: center;
-    //     @include before_circle;
-    //     &:before {
-    //         top: -6px;
-    //         left: 50%;
-    //         transform: translateX(-50%);
-    //     }
-    // }
-    // &__section-subtitle {
-    //     text-align: center;
-    // }
+    &__section-title {
+        position: relative; //чтобы стал виден кружочек который я заинклюдила но по стандарту он становится в позиции лефт0 блока h2
+        text-align: center;
+        @include before_circle; //чтобы появился кружочек
+        &:before {
+            top: -6px;
+            left: 50%;
+            transform: translateX(-50%); //чтобы кружочек встал по середине
+        } // стили для того чтобы кружочек встал посередине текста "опыт" 50% слева, но транслейтом на середина кружочка встает на середине экрана, а не начинается кружочек на середине экрана, а топ - разметка верх-низ
+    }
+    &__section-subtitle {
+        text-align: center;
+    }
 }
+
+
+
+
+
+

@@ -1,18 +1,6 @@
 .skills {
     padding-top: 131px; // отодвинула секцию от прошлой
-    &__title {
-        position: relative;
-        text-align: center;
-        @include before_circle; //чтобы появился кружочек
-        &:before {
-            top: -6px;
-            left: 50%;
-            transform: translateX(-50%); //чтобы кружочек встал по середине
-        }
-    }
-    &__subtitle {
-        text-align: center;
-    }
+    //title__section-title и title__section-subtitle вынесла в общие стили title
     &__items {
         margin-top: 60px;
         padding: 0 10px;

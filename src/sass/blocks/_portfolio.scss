@@ -1,18 +1,6 @@
 .portfolio {
     padding-top: 120px;
-    &__title {
-        position: relative;
-        text-align: center;
-        @include before_circle;
-        &:before {
-            top: -6px;
-            left: 50%;
-            transform: translateX(-50%);
-        }
-    }
-    &__subtitle {
-        text-align: center;
-    }
+    //title__section-title и title__section-subtitle вынесла в общие стили title
     &__wrapper {
         margin-top: 60px;
         display: grid;
