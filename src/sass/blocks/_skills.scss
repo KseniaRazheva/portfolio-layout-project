@@ -52,8 +52,8 @@
             display: grid;
             grid-template-rows: minmax(21px, auto); //превратила item в 1 строку минимум  по 21px встало почему-то 70px
             grid-template-columns: 200px 35px; //сделала title 200px counter 35px 
-            justify-content: space-between;
-            align-content: space-between;
+            justify-content: space-between; // раскидала элементы по горизонтали: левые прижала к левому краю, правые к правому
+            align-content: space-between; //раскидала элементы по вертикали: верхнюю строку прижала вверх, нижнюю вниз
         }
         &-title {
             position: relative; //без этого кружечек не появляется
