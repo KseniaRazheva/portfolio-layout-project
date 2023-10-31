@@ -421,7 +421,7 @@
     </section>
 
     <section class="contacts">
-        <div class="'container">
+        <div class="container">
             <div class="contacts__wrapper">
                 <div class="contacts__photo">
                     <img src="img/Photo.jpg" alt="photo">
@@ -442,11 +442,26 @@
                         <a href="#" class="contacts__link">
                             <img src="icons/social/3-2-Instagram.svg" alt="instagram">
                         </a>
-                    </div> //обертка социальных сетей
+                    </div>
                     <div class="title title_fz14 contacts__text">Или оставьте ваши данные и я сама вам напишу:</div>
 
                     <form action="#" class="contacts__form">
-                        
+                        <div class="contacts__input">
+                            <input name="name" id="name" type="text">
+                            <label for="name">Ваше имя</label>
+                        </div><!-- ваше имя -->
+                        <div class="contacts__input">
+                            <input name="email" id="email" type="email">
+                            <label for="email">Ваша почта</label>
+                        </div><!-- ваша почта -->
+
+                        <div class="contacts__textarea">
+                            <textarea name="text" id="text"></textarea>
+                            <label for="text">Ваше сообщение</label>
+                        </div><!-- ваше сообщение -->
+                        <div>
+                            <button class="contacts__btn btn">Отправить сообщение</button>
+                        </div>
                     </form>
                 </div>
             </div>
